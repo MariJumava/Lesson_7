@@ -1,0 +1,12 @@
+@media screen and (min-width: 300px) and (max-width: 760px) {
+    .gamburger {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 578px) and (max-height: 150px) {
+    input[type=button] {
+        display: flex;
+        order: -1;
+    }
+}
