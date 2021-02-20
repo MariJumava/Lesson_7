@@ -390,7 +390,7 @@ input[type=button] {
 }
 
 .footer__card--company {
-    width: 250px;
+    width: 200px;
 }
 
 .footer__card-title {
@@ -416,7 +416,7 @@ input[type=button] {
 }
 
 .footer__card--links {
-    width: 220px;
+    width: 150px;
 }
 
 .footer__list {
@@ -447,7 +447,7 @@ input[type=button] {
 }
 
 .footer__card--contact {
-    width: 140px;
+    width: 100px;
 } 
 
 .footer__card-adress {
@@ -459,7 +459,7 @@ input[type=button] {
 }
 
 .footer__card--socials {
-   width: 87px;
+   width: 80px;
    margin-top: 70px;
 }    
 
