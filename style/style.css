@@ -1,0 +1,475 @@
+/* Default styles */
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Components */
+
+.container {
+    width: 65%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.primary-title {
+    position: relative;
+    padding-top: 60px;
+    margin-bottom: 60px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #48555b;
+    letter-spacing: 2.31px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.primary-title::before {
+    content: '';
+    position: absolute;
+    top: 95px;
+    left: calc(50% - 25px);
+    width: 50px;
+    height: 2px;
+    background-color: #00a4e5;
+}
+
+.primary-title--left::before {
+    left: 0;
+}
+
+.button {
+    padding: 1em 2em;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #00a4e5;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.button--huge {
+    padding: 1em 4em;
+}
+
+.button:hover {
+    background-color: lightblue;
+}
+
+/* Header */
+
+.header__logo-white {
+    padding-top: 2em;
+    margin-bottom: 16em;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/construction.png);
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.header__title {
+    font-size: 60px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.header__subtitle {
+    margin-bottom: 220px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.header___link {
+    margin-bottom: 70px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Navigation */
+
+.nav__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+}
+
+.nav__list {
+    display: block;
+}
+
+.nav__link {
+    margin-left: 45px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #48555b;
+    text-transform: uppercase;
+}
+
+.nav__link:hover {
+    color: #00a4e5;
+}
+
+
+/* Gamburger */
+
+.gamburger {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    display: none;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+}
+
+.gamburger::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+}
+
+.gamburger::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+}
+
+/* Section about */
+
+.about__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__body--inner {
+    display: flex;
+}
+
+.about__text-container {
+    width: 50%;
+    padding-right: 65px;
+}
+
+.about__card-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.about__subtitle {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #48555b;
+}
+
+.about__description {
+    font-size: 13px;
+    color: #48555b;
+    line-height: 23px;
+}
+
+.about__card {
+    width: 140px;
+    height: 224px;
+    margin: 0 0 10px 15px;
+}
+
+.about__card-title {
+    padding: 15px;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 29px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.about__card--plan {
+    background: url(../img/We-plan.png) no-repeat center/cover;
+}
+
+.about__card--manage {
+    background: url(../img/We-manage.png) no-repeat center/cover;
+}
+
+.about__card--build {
+    background: url(../img/We-build.png) no-repeat center/cover;
+}
+
+/* Section with services */
+
+.services__body {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 130px;
+}
+
+.services__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services__description {
+    width: 40%;
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    color: #48555b;
+}
+
+.services__card--management {
+    background: url(../img/Management.png) no-repeat 23px 20px;
+}
+
+.services__card--structure {
+    background: url(../img/Audit.png) no-repeat 23px 20px;
+}
+
+.services__card--factory {
+    background: url(../img/Factory.png) no-repeat 23px 20px;
+}
+
+.services__card {
+    display: flex;
+    flex-direction: column;
+
+    width: 295px;
+    padding: 95px 23px 30px;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    background-size: 55px;
+}
+
+.services__card:not(:last-child){
+    margin-right: 10px;
+}
+
+.services__card-title {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #48555b;
+    line-height: 24px;
+    letter-spacing: 0.43px;
+    text-transform: uppercase;
+}
+
+.services__card-text {
+    color: #48555b;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.2px;
+}
+
+/* Section get-in-touch */
+
+.get-in-touch {
+    background: url(../img/town.png) no-repeat center;
+    padding-bottom: 230px;
+}
+
+.get-in-touch__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.get-in-touch__title {
+    width: 40%;
+    margin-bottom: 35px;
+    padding-top: 130px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #48555b;
+    letter-spacing: 0.15px;
+    line-height: 36px;
+    text-align: center;
+}
+
+/* Section newsletter */
+
+.newsletter {
+    height: 100px;
+    background-color: #000;
+}
+
+.newsletter__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.newsletter__body--inner {
+    display: flex;
+    justify-content: center;
+}
+.newsletter__title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.85px;
+}
+
+.newsletter__field {
+    width: 250px;
+    padding: 1em 2em;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    color: #48555b;
+}
+
+/* Footer */
+
+.footer {
+    padding-top: 40px;
+    background-color: #141A20;
+}
+
+.footer__body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.footer__card--company {
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+.footer__card-title {
+    margin-bottom: 20px;
+    font-size: 11px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.85px;
+    text-transform: uppercase;
+}
+
+.footer__logo {
+    margin-bottom: 20px;
+}
+
+.footer__card-text {
+    font-size: 11px;
+    color: #FFFFFF;
+    letter-spacing: 0.85px;
+    line-height: 19px;
+}
+
+.footer__card--links {
+    display: flex;
+}
+
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+    margin-bottom: 15px;
+}
+
+.footer__link {
+    font-size: 11px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.85px;
+    text-transform: uppercase;
+    line-height: 25px;
+}
+
+.footer__link:hover {
+    color: #00a4e5;
+}
+
+.footer__list-info {
+    margin-right: 25px;
+}
+
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.footer__contact-address,
+.footer__contact-tel,
+.footer__contact-mail {
+    font-size: 11px;
+    color: #fff;
+    font-style: normal;
+    line-height: 19px;
+    letter-spacing: 0.85px;
+}
+
+.footer__contact-tel:hover,
+.footer__contact-mail:hover {
+    color: #00a4e5;
+}
+
+.footer__social-item {
+    margin: 0 12px;
+}
+
+.footer__copyright {
+    margin-bottom: 30px;
+    font-size: 11px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.85px;
+}
